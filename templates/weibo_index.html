@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .weibo-content{
+            background: red;
+        }
+        .comment {
+            border: 1px black solid;
+        }
+        .comment-list {
+            background: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input id="id-input-weibo">
+        <button id="id-button-add-weibo">发表微博</button>
+    </div>
+    <div class="weibo-list gua-auto-list">
+         <!-- 下面是xjm教我html可以自定义标签放入上面的div, 然后可以自定义更加好的ajax() -->
+         <!--data-method="get"-->
+         <!--data-path="/api/weibo/all"-->
+         <!--data-template="xxtemplate"-->
+
+        <!--- 待会儿把新增的weibo及其评论封装成weibocell插入到weibo-list中 -->
+
+        <div class="comment">  <!--  待会儿把新增的评论封装成comment-list插入到comment中-->
+        </div>
+        <!--<div class="comment-form">-->
+            <!--<input type="hidden" id="comment-weibo_id" value="${id}">-->
+            <!--<input id="comment-content">-->
+            <!--<br>-->
+            <!--<button class="comment-add">添加评论</button>-->
+        <!--</div>-->
+    </div>
+    <script src='/static?file=gua.js'></script>
+    <script src='/static?file=weibo.js'></script>
+
+
+</body>
+</html>
